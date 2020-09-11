@@ -12,7 +12,8 @@ if(! function_exists('mce_back'))
     {
         return ("
             <script>
-            top.$('.mce-btn.mce-open').parent().find('.mce-textbox').val('/". env('TINY_MCE_UPLOAD_DIRECTORY', 'img') ."/".$filename."').closest('.mce-window').find('.mce-primary').click();
+                top.$('.tox-browse-url').parent().find('.tox-textfield').val('/img/$filename');
+                top.$(\"button[title|='Save']\").click();
             </script>
         ");
     }
