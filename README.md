@@ -13,10 +13,20 @@ That's it, so I create this package for my projects to re-use. Well, if you want
 
 ## Installation
 
-For Laravel 5.5+:
+For Laravel 5.5+, add to `composer.json`:
 
 ```
-$ composer require "petehouston/laravel-tinymce-simple-imageupload:~1.3"
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/ijaureguialzo/laravel-tinymce-simple-imageupload.git"
+        }
+    ],
+    "require": {
+        ...
+
+        "petehouston/laravel-tinymce-simple-imageupload": "dev-master"
+    },
 ```
 
 For Laravel before 5.5:
